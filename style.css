@@ -1,0 +1,54 @@
+body {
+  background-color: #849eec;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  border-color: black;
+  border-style: solid;
+}
+
+.title {
+  background-color: rgb(145, 68, 68);
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 10px;
+}
+
+.title p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.notification {
+  color: red;
+  background-color: rosybrown;
+}
+
+.temperature-val p {
+  font-size: 4.5rem;
+  margin: 0;
+  width: 250px;
+  padding: 0px 75px 0px 75px;
+  /* max-width: 100px; */
+}
+
+.temperature-val p:hover {
+  cursor: pointer;
+}
+
+.description p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.location p {
+  font-size: 1.15rem;
+}
