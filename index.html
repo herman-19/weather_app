@@ -12,9 +12,27 @@
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
+    <div id="backdrop"></div>
+    <div class="modal" id="change-location-modal">
+      <div class="modal-content">
+        <h2 class="modal-title">How's the weather out there?</h2>
+        <img src="images/globe.png" alt="world-cities" />
+        <p>Enter a city name below.</p>
+        <input
+          type="text"
+          placeholder="e.g., Lisbon, Johannesburg, Cairo"
+          name="location"
+          id="location-input"
+        />
+      </div>
+      <div class="modal-actions">
+        <button class="btn" id="btn-passive">Cancel</button>
+        <button class="btn" id="btn-success">Submit</button>
+      </div>
+    </div>
     <div class="container">
       <div class="title">
-        <p><strong>Weather</strong></p>
+        <p><strong>Weather Today</strong></p>
       </div>
       <div class="notification"></div>
       <div class="weather-info-container">
@@ -22,6 +40,9 @@
         <div class="temperature-val"><p>- °F</p></div>
         <div class="description"><p>-</p></div>
         <div class="location"><p>-</p></div>
+        <div class="button-container">
+          <button id="location-button">Change Location...</button>
+        </div>
       </div>
     </div>
   </body>
